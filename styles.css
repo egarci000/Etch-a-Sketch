@@ -1,0 +1,16 @@
+*{
+  border: 1px solid cyan;
+  box-sizing: border-box;
+}
+
+#div-container {
+  display: flex;
+  flex-flow: wrap row;
+  width: 1005px;
+  height: 1000px;
+}
+
+.child-div {
+  background-color: white;
+  flex-shrink: 0;
+}
