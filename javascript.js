@@ -13,6 +13,11 @@ function getMouseUp(){
   isDrawing = false;
 }
 
+function getRandomColor(){
+  let randomNumber = Math.floor(Math.random() * 255);
+  return randomNumber;
+}
+
 function getUserInput(){
   let numberOfSquares = prompt("What size grid would you like?");
 
@@ -51,7 +56,7 @@ function createHovering(){
     let childDivs = parentDivElement.children;
     for (const child of childDivs){ 
       child.addEventListener("mouseover", function(){
-        child.style.backgroundColor = "black";
+        child.style.backgroundColor = `rgb(${getRandomColor()}, ${getRandomColor()}, ${getRandomColor()})`;
       });
     }
   }
