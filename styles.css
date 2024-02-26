@@ -1,5 +1,6 @@
 *{
   box-sizing: border-box;
+  font-size: 20px;
 }
 
 body {
@@ -8,29 +9,53 @@ body {
   background-image: url("images/colorful-background-image.png");
   background-size: 100% 100%;
 }
-
 #title-container{
-  width: 400px;
-  height: 300px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 50px;
+  padding: 20px;
+}
+
+button {
+  font-size: 1.5em;
+  font-weight: 700;
+  border-radius: 100px;
+  padding: 0px 20px;
+  border: none;
+  color: white;
+  background-color: black;
+  height: 100px;
+  width: 200px;
 }
 
 #title {
   display: flex;
   flex-flow: wrap column;
   width: 300px;
+  padding: 0px 50px;
   color: white;
+  background-color: black;
+  border-radius: 100px;
+}
+
+#title h1 {
+  font-size: 2.5em;
+  font-weight: 700;
 }
 
 #title p {
   margin-top: -20px;
+  font-size: 1.5em;
+  font-weight: 700;
 }
 
 #main-section{
   display: flex;
   gap: 40px;
   align-items: center;
+  justify-content: center;
 }
 
 #div-container {

@@ -19,7 +19,7 @@ function getRandomColor(){
 }
 
 function getUserInput(){
-  let numberOfSquares = prompt("What size grid would you like?");
+  let numberOfSquares = prompt("How many squares per side?");
 
   if(numberOfSquares <= 100) return numberOfSquares;
 }
@@ -68,6 +68,5 @@ btn.addEventListener("click", function(){
     gridDone = true;
   }
   createUserSquares();
-  // createHovering();
   return num;
 });
